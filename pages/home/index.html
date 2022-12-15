@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/globalStyles.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <title>Webwomen</title>
-    <meta
-      name="description"
-      content="Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/globalStyles.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <title>Webwomen</title>
+  <meta name="description" content="Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
       Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil 
-      e ao redor do mundo?"
-    />
+      e ao redor do mundo?" />
 </head>
+
 <body>
-    <main></main>
-    <script src="jobsData.js"></script>
-    <script src="index.js"></script>
+
+  <header class="header__container-img">
+    <div class="img__opacity">
+      <div class="header__container container">
+        <img class="header__title" src="/assets/img/logo.svg" alt="Webwomen"></img>
+        <h1 class="header__subtitle">Lugar de mulher é onde ela quiser!</h1>
+        <div class="header__description-container">
+          <p class="header__description">Está procurando oportunidades de estágio, emprego ou bolsas de estudo?
+            Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo?</p>
+          <p class="header__jobs-call"> Confere aqui embaixo o que temos pra você!</p>
+          <button class="header__jobs-btn">Ir para a seção de vagas</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="cards__container">
+      <h2 class="cards__title container">Vagas</h2>
+
+      <ul class="cards__list container">
+        <li class="card">
+          <h3 class="card__title">Pessoa desenvolvedora front-end - React JS</h3>
+          <div class="info__container">
+            <span class="card__company">Kenzie Academy</span>
+            <span class="card__city">Curitiba</span>
+          </div>
+          <p class="card__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <span class="card__modality">Home Office</span>
+          <button class="card__button">Candidatar</button>
+        </li>
+
+        <li class="card">
+          <h3 class="card__title">Pessoa desenvolvedora front-end - React JS</h3>
+          <div class="info__container">
+            <span class="card__company">Kenzie Academy</span>
+            <span class="card__city">Curitiba</span>
+          </div>
+          <p class="card__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <span class="card__modality">Home Office</span>
+          <button class="card__button">Candidatar</button>
+        </li>
+      </ul>
+
+    </div>
+
+  </main>
+  <script src="jobsData.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>

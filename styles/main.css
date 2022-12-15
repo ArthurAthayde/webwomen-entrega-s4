@@ -1,0 +1,95 @@
+.cards__list{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.cards__container {
+    color: white;
+    background-color: var(--color-grey-5);
+}
+
+
+.cards__title {
+    color: var(--color-grey-1);
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: var(--title-6);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.2rem;
+
+    background-color: var(--color-grey-6);
+    padding: 2rem;
+}
+
+.card__title {
+    color: var(--color-grey-1);
+    font-weight: bold;
+    font-size: var(--title-6);
+
+    line-height: 150%;
+}
+
+.card__company,
+.card__city {
+    color: var(--color-grey-2);
+    font-size: 11px;
+}
+
+.card__description {
+    color: var(--color-grey-2);
+    font-size: 12px;
+
+    line-height: 200%;
+
+}
+
+.info__container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.card__modality {
+    background-color: var(--color-grey-3);
+
+    color: var(--color-grey-2);
+    font-size: 10px;
+
+    padding: 8px;
+
+    width: 90px;
+
+    text-align: center;
+
+}
+
+.card__button{
+    background-color: var(--color-brand-1);
+
+
+    width: 220px;
+    height: 25px;
+
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    color: var(--color-grey-6);
+    letter-spacing: .5px;
+
+    border: none;
+    border-radius: var(--radius-default);
+
+    font-family: "Poppins", sans-serif;
+}
