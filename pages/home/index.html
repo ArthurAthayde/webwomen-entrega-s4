@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/cart.css">
   <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
   <title>Webwomen</title>
   <meta name="description" content="Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
@@ -21,7 +22,7 @@
 
   <header class="header__container-img">
     <div class="img__opacity">
-      <div class="header__container container">
+      <div class="header__container">
         <img class="header__title" src="/assets/img/logo.svg" alt="Webwomen"></img>
         <h1 class="header__subtitle">Lugar de mulher é onde ela quiser!</h1>
         <div class="header__description-container">
@@ -35,40 +36,73 @@
   </header>
 
   <main class="container">
-    <div class="cards__container">
-      <h2 class="cards__title container">Vagas</h2>
+    <div class="container__desktop">
+      <div class="cards__container">
+        <h2 class="cards__title container">Vagas</h2>
 
-      <ul class="cards__list container">
-        <li class="card">
-          <h3 class="card__title">Pessoa desenvolvedora front-end - React JS</h3>
-          <div class="info__container">
-            <span class="card__company">Kenzie Academy</span>
-            <span class="card__city">Curitiba</span>
-          </div>
-          <p class="card__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-          <span class="card__modality">Home Office</span>
-          <button class="card__button">Candidatar</button>
-        </li>
+        <ul class="cards__list ">
+          <li class="card">
+            <h3 class="card__title">Pessoa desenvolvedora front-end - React JS</h3>
+            <div class="info__container">
+              <span class="card__company">Kenzie Academy</span>
+              <span class="card__city">Curitiba</span>
+            </div>
+            <p class="card__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem
+              Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <span class="card__modality">Home Office</span>
+            <button class="card__button">Candidatar</button>
+          </li>
 
-        <li class="card">
-          <h3 class="card__title">Pessoa desenvolvedora front-end - React JS</h3>
-          <div class="info__container">
-            <span class="card__company">Kenzie Academy</span>
-            <span class="card__city">Curitiba</span>
-          </div>
-          <p class="card__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-          <span class="card__modality">Home Office</span>
-          <button class="card__button">Candidatar</button>
-        </li>
-      </ul>
+          <li class="card">
+            <h3 class="card__title">Pessoa desenvolvedora front-end - React JS</h3>
+            <div class="info__container">
+              <span class="card__company">Kenzie Academy</span>
+              <span class="card__city">Curitiba</span>
+            </div>
+            <p class="card__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem
+              Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <span class="card__modality">Home Office</span>
+            <button class="card__button">Candidatar</button>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="cart__container">
+        <ul class="cart__list">
+          <h2 class="cart__title">Vagas Selecionadas</h2>
+          <span class="cart__empty ">Você ainda não aplicou para nenhuma vaga</span>
+          <li class="cart__item">
+            <div class="cart__item-container">
+              <h3 class="cart__item-title">Pessoa desenvolvedora front-end- React JS</h3>
+              <div class="info__container">
+                <span class="card__company">Kenzie Academy</span>
+                <span class="card__city">Curitiba</span>
+              </div>
+            </div>
+            <button class="cart__delete"><img src="/assets/img/trash-bin.png" alt=""></button>
+          </li>
+
+          <li class="cart__item">
+            <div class="cart__item-container">
+              <h3 class="cart__item-title">Pessoa desenvolvedora front-end- React JS</h3>
+              <div class="info__container">
+                <span class="card__company">Kenzie Academy</span>
+                <span class="card__city">Curitiba</span>
+              </div>
+            </div>
+            <button class="cart__delete"><img src="/assets/img/trash-bin.png" alt=""></button>
+          </li>
+        </ul>
+      </aside>
 
     </div>
-
   </main>
   <script src="jobsData.js"></script>
   <script src="index.js"></script>
 </body>
 
 </html>
+
+<!-- para o git, colocar no pages /pages/home/index.html -->
