@@ -1,9 +1,11 @@
-.cards__list{
+.cards__list {
     display: flex;
     flex-direction: column;
 
     gap: 2rem;
 }
+
+.container__desktop {}
 
 .cards__container {
     color: white;
@@ -27,6 +29,10 @@
 
     background-color: var(--color-grey-6);
     padding: 2rem;
+
+    border-radius: var(--radius-default);
+
+    position: relative;
 }
 
 .card__title {
@@ -69,9 +75,11 @@
 
     text-align: center;
 
+    border-radius: var(--radius-default);
+
 }
 
-.card__button{
+.card__button {
     background-color: var(--color-brand-1);
 
 
@@ -92,4 +100,79 @@
     border-radius: var(--radius-default);
 
     font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 769px) {
+
+    .container {
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+
+    }
+
+    .container__desktop {
+        display: flex;
+
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+    .cards__container {
+        width: 40%;
+
+    }
+
+    .cards__list {
+        width: 100%;
+        align-self: flex-start;
+        margin: 0;
+    }
+
+
+    .card {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .card__title {
+        font-size: 13px;
+    }
+
+    .card__company,
+    .card__city {
+        font-size: 9px;
+    }
+
+    .card__description {
+        font-size: 10px;
+        line-height: 200%;
+    }
+
+    .card__modality {
+        width: 70px;
+        padding: 6px;
+
+        font-size: 8px;
+
+    }
+
+    .card__button {
+
+
+        width: 90px;
+        height: 20px;
+
+        padding: 12px;
+
+        position: absolute;
+
+        right: 35px;
+        bottom: 18px;
+
+        font-size: 10px;
+
+    }
 }
